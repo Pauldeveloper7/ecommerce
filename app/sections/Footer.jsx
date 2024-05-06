@@ -1,13 +1,14 @@
 const  copyrightSign =  "/icons/copyright-sign.svg";
 const  footerLogo  = "/images/footer-logo.svg";
 import { footerLinks, socialMedia } from "@/constants/index";
+import Image from "next/image";
 const Footer = () => {
   return (
     <footer className='max-container'>
       <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
         <div className='flex flex-col items-start'>
           <a href='/'>
-            <img
+            <Image
               src={footerLogo}
               alt='logo'
               width={150}
@@ -25,7 +26,7 @@ const Footer = () => {
                 className='flex justify-center items-center w-12 h-12 bg-white rounded-full'
                 key={icon.alt}
               >
-                <img src={icon.src} alt={icon.alt} width={24} height={24} />
+                <Image src={icon.src} alt={icon.alt} width={24} height={24} />
               </div>
             ))}
           </div>
@@ -54,7 +55,7 @@ const Footer = () => {
 
       <div className='flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center'>
         <div className='flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer'>
-          <img
+          <Image
             src={copyrightSign}
             alt='copyright sign'
             width={20}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Button = ({
     label,
     iconURL,
@@ -18,10 +20,13 @@ const Button = ({
         {label}
   
         {iconURL && (
-          <img
+          <Image
             src={iconURL}
             alt='arrow right icon'
             className='ml-2 rounded-full bg-white w-5 h-5'
+            width={100}
+            height={100}
+
           />
         )}
       </button>

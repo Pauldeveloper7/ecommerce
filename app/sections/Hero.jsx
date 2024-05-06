@@ -3,6 +3,7 @@ import {useState} from 'react'
 import { statistics } from "@/constants/index";
 import { shoes } from "@/constants/index";
 import ShoeCard from "@/components/ShoeCard";
+import Image from 'next/image';
 const bigShoe1 = '/images/big-shoe1.png'
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1); 
@@ -40,7 +41,7 @@ const Hero = () => {
         </div>
         </div>
       <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
-        <img
+        <Image
           src={bigShoeImg}
           alt='shoe collection'
           width={610}

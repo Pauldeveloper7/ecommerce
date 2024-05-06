@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { navLinks } from "../constants";
 import MenuIcon from '@mui/icons-material/Menu';
 const Nav = () => {
@@ -5,7 +6,7 @@ const Nav = () => {
     <header className='padding-x py-8 absolute z-10 w-full'>
      <nav className='flex justify-between items-center max-container'>
         <a href='/'>
-          <img
+          <Image
             src={'/images/logo.svg'}
             alt='logo'
             width={199}
