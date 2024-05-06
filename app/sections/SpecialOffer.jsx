@@ -1,8 +1,7 @@
 const   arrowRight = "/icons/arrow-right.svg";
-const  offer  = "/images/Offer.svg";
 import  Button  from "@/components/Button";
 import Image from "next/image";
-
+const offer = '/images/offer.svg';
 const SpecialOffer = () => {
   return (
     <section className='flex justify-between items-center max-xl:flex-col-reverse gap-10 max-container'>
