@@ -5,6 +5,10 @@ const bigShoe3 = '/images/big-shoe3.png'
 const thumbnail1 = '/images/thumbnail-shoe1.svg'
 const thumbnail2 = '/images/thumbnail-shoe2.svg'
 const thumbnail3 = '/images/thumbnail-shoe3.svg'
+const shoe4 = '/images/shoe4.svg'
+const shoe5 = '/images/shoe5.svg'
+const shoe6 = '/images/shoe6.svg'
+const shoe7 = '/images/shoe7.svg'
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -33,28 +37,36 @@ export const statistics = [
     { value: '250k+', label: 'Customers' },
 ];
 
-// export const products = [
-//     {
-//         imgURL: shoe4,
-//         name: "Nike Air Jordan-01",
-//         price: "$200.20",
-//     },
-//     {
-//         imgURL: shoe5,
-//         name: "Nike Air Jordan-10",
-//         price: "$210.20",
-//     },
-//     {
-//         imgURL: shoe6,
-//         name: "Nike Air Jordan-100",
-//         price: "$220.20",
-//     },
-//     {
-//         imgURL: shoe7,
-//         name: "Nike Air Jordan-001",
-//         price: "$230.20",
-//     },
-// ];
+export const products = [
+    {
+        imgURL: shoe4,
+        name: "AOne Air Jordan-01",
+        price: "$200.20",
+        rating: 4.5,
+        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+    },
+    {
+        imgURL: shoe5,
+        name: "AOne Air Jordan-10",
+        price: "$210.20",
+        rating: 4.8,
+        feedback: " The product is best in the world"
+    },
+    {
+        imgURL: shoe6,
+        name: "AOne Air Jordan-100",
+        price: "$220.20",
+        rating: 5.5,
+        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+    },
+    {
+        imgURL: shoe7,
+        name: "AOne Air Jordan-001",
+        price: "$230.20",
+        rating: 6.5,
+        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+    },
+];
 
 // export const services = [
 //     {
@@ -98,8 +110,8 @@ export const statistics = [
 //             { name: "Air Max 1", link: "/" },
 //             { name: "Air Jordan 1", link: "/" },
 //             { name: "Air Force 2", link: "/" },
-//             { name: "Nike Waffle Racer", link: "/" },
-//             { name: "Nike Cortez", link: "/" },
+//             { name: "AOne Waffle Racer", link: "/" },
+//             { name: "AOne Cortez", link: "/" },
 //         ],
 //     },
 //     {
@@ -115,7 +127,7 @@ export const statistics = [
 //     {
 //         title: "Get in touch",
 //         links: [
-//             { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+//             { name: "customer@AOne.com", link: "mailto:customer@AOne.com" },
 //             { name: "+92554862354", link: "tel:+92554862354" },
 //         ],
 //     },
