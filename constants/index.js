@@ -9,7 +9,14 @@ const shoe4 = '/images/shoe4.svg'
 const shoe5 = '/images/shoe5.svg'
 const shoe6 = '/images/shoe6.svg'
 const shoe7 = '/images/shoe7.svg'
-
+const customer1 = '/images/customer1.jpeg'
+const customer2 = '/images/customer2.svg'
+const  truckFast = '/icons/truck-fast.svg'
+const  shieldTick = '/icons/shield-tick.svg'
+const support = '/icons/support.svg'
+const facebook = '/icons/facebook.svg'
+const instagram = '/icons/instagram.svg'
+const twitter = '/icons/twitter.svg'
 export const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about-us", label: "About Us" },
@@ -68,73 +75,73 @@ export const products = [
     },
 ];
 
-// export const services = [
-//     {
-//         imgURL: truckFast,
-//         label: "Free shipping",
-//         subtext: "Enjoy seamless shopping with our complimentary shipping service."
-//     },
-//     {
-//         imgURL: shieldTick,
-//         label: "Secure Payment",
-//         subtext: "Experience worry-free transactions with our secure payment options."
-//     },
-//     {
-//         imgURL: support,
-//         label: "Love to help you",
-//         subtext: "Our dedicated team is here to assist you every step of the way."
-//     },
-// ];
+export const services = [
+    {
+        imgURL: truckFast,
+        label: "Free shipping",
+        subtext: "Enjoy seamless shopping with our complimentary shipping service."
+    },
+    {
+        imgURL: shieldTick,
+        label: "Secure Payment",
+        subtext: "Experience worry-free transactions with our secure payment options."
+    },
+    {
+        imgURL: support,
+        label: "Love to help you",
+        subtext: "Our dedicated team is here to assist you every step of the way."
+    },
+];
 
-// export const reviews = [
-//     {
-//         imgURL: customer1,
-//         customerName: 'Morich Brown',
-//         rating: 4.5,
-//         feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
-//     },
-//     {
-//         imgURL: customer2,
-//         customerName: 'Lota Mongeskar',
-//         rating: 4.5,
-//         feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
-//     }
-// ];
+export const reviews = [
+    {
+        imgURL: customer1,
+        customerName: 'Morich Brown',
+        rating: 4.5,
+        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+    },
+    {
+        imgURL: customer2,
+        customerName: 'Lota Mongeskar',
+        rating: 4.5,
+        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+    }
+];
 
 
-// export const footerLinks = [
-//     {
-//         title: "Products",
-//         links: [
-//             { name: "Air Force 1", link: "/" },
-//             { name: "Air Max 1", link: "/" },
-//             { name: "Air Jordan 1", link: "/" },
-//             { name: "Air Force 2", link: "/" },
-//             { name: "AOne Waffle Racer", link: "/" },
-//             { name: "AOne Cortez", link: "/" },
-//         ],
-//     },
-//     {
-//         title: "Help",
-//         links: [
-//             { name: "About us", link: "/" },
-//             { name: "FAQs", link: "/" },
-//             { name: "How it works", link: "/" },
-//             { name: "Privacy policy", link: "/" },
-//             { name: "Payment policy", link: "/" },
-//         ],
-//     },
-//     {
-//         title: "Get in touch",
-//         links: [
-//             { name: "customer@AOne.com", link: "mailto:customer@AOne.com" },
-//             { name: "+92554862354", link: "tel:+92554862354" },
-//         ],
-//     },
-// ];
+export const footerLinks = [
+    {
+        title: "Products",
+        links: [
+            { name: "Air Force 1", link: "/" },
+            { name: "Air Max 1", link: "/" },
+            { name: "Air Jordan 1", link: "/" },
+            { name: "Air Force 2", link: "/" },
+            { name: "AOne Waffle Racer", link: "/" },
+            { name: "AOne Cortez", link: "/" },
+        ],
+    },
+    {
+        title: "Help",
+        links: [
+            { name: "About us", link: "/" },
+            { name: "FAQs", link: "/" },
+            { name: "How it works", link: "/" },
+            { name: "Privacy policy", link: "/" },
+            { name: "Payment policy", link: "/" },
+        ],
+    },
+    {
+        title: "Get in touch",
+        links: [
+            { name: "customer@AOne.com", link: "mailto:customer@AOne.com" },
+            { name: "+92554862354", link: "tel:+92554862354" },
+        ],
+    },
+];
 
-// export const socialMedia = [
-//     { src: facebook, alt: "facebook logo" },
-//     { src: twitter, alt: "twitter logo" },
-//     { src: instagram, alt: "instagram logo" },
-// ];
+export const socialMedia = [
+    { src: facebook, alt: "facebook logo" },
+    { src: twitter, alt: "twitter logo" },
+    { src: instagram, alt: "instagram logo" },
+];
