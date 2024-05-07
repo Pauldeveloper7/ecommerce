@@ -6,7 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
 import CloseIcon from '@mui/icons-material/Close';
 const Nav = () => {
-  const {  isSignedIn } = useUser();
+  // const {  isSignedIn } = useUser();
   const [IsuserloggedIn, setIsuserloggedIn] = useState(false)
   return (
     <header className='padding-x py-8 absolute z-10 w-full'>
@@ -32,7 +32,7 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24'>
+        {/* <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24'>
          {
 
            isSignedIn?(
@@ -52,7 +52,7 @@ const Nav = () => {
          )
          
 }
-        </div>
+        </div> */}
         <div className='hidden max-lg:block'>
         <MenuIcon onClick={()=>{setIsuserloggedIn(true)}} />    
         </div>
