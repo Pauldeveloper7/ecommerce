@@ -1,9 +1,16 @@
+"use client";
+import { SignUp, SignedIn, UserButton, useUser , SignedOut } from "@clerk/nextjs";
 import Image from "next/image";
 import { navLinks } from "../constants";
 import MenuIcon from '@mui/icons-material/Menu';
+import { useState } from "react";
+import CloseIcon from '@mui/icons-material/Close';
 const Nav = () => {
+  const {  isSignedIn } = useUser();
+  const [IsuserloggedIn, setIsuserloggedIn] = useState(false)
   return (
-    <header className='padding-x py-8 absolute z-10 w-full'>
+    // padding-x py-8 absolute z-10 w-full
+    <header className=''>
      <nav className='flex justify-between items-center max-container'>
         <a href='/'>
           <Image
@@ -27,15 +34,50 @@ const Nav = () => {
           ))}
         </ul>
         <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24'>
-          <a href='/'>Sign in</a>
-          <span>/</span>
-          <a href='/'>Explore now</a>
+         {
+
+           isSignedIn?(
+             <>
+          <SignedIn>
+          <UserButton/>
+         </SignedIn>
+         <SignedOut>
+          <UserButton/>
+         </SignedOut> 
+          </>
+         ):(
+           <>
+            <SignUp/>
+            <UserButton/>
+          </>
+         )
+         
+}
         </div>
         <div className='hidden max-lg:block'>
-        <MenuIcon />    
+        <MenuIcon onClick={()=>{setIsuserloggedIn(true)}} />    
         </div>
+
       </nav>
-    </header>
+      {
+        IsuserloggedIn && (
+          <div className="w-full flex flex-col justify-center gap-8 bg-coral-red  p-9   absolute z-50 h-80 top-0 ">
+            <CloseIcon className="relative top-0 left-0" onClick={()=>{setIsuserloggedIn(false)}}/>
+         <ul className=" flex items-center flex-col">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Women</li>
+            <li>Men</li>
+            <li>Profile</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            </ul> 
+
+          </div>
+        )
+      }
+      </header>
   );
 };
 
