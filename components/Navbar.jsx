@@ -9,8 +9,7 @@ const Nav = () => {
   const {  isSignedIn } = useUser();
   const [IsuserloggedIn, setIsuserloggedIn] = useState(false)
   return (
-    // padding-x py-8 absolute z-10 w-full
-    <header className=''>
+    <header className='padding-x py-8 absolute z-10 w-full'>
      <nav className='flex justify-between items-center max-container'>
         <a href='/'>
           <Image
@@ -59,24 +58,23 @@ const Nav = () => {
         </div>
 
       </nav>
-      {
-        IsuserloggedIn && (
-          <div className="w-full flex flex-col justify-center gap-8 bg-coral-red  p-9   absolute z-50 h-80 top-0 ">
-            <CloseIcon className="relative top-0 left-0" onClick={()=>{setIsuserloggedIn(false)}}/>
-         <ul className=" flex items-center flex-col">
-            <li>Home</li>
-            <li>Products</li>
-            <li>Women</li>
-            <li>Men</li>
-            <li>Profile</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact Us</li>
-            </ul> 
-
-          </div>
-        )
-      }
+      {IsuserloggedIn && (
+  <main className="w-full h-screen flex items-center justify-center bg-white fixed top-0 left-0 z-50">
+    <div className="bg-white p-8 rounded-lg shadow-lg">
+      <CloseIcon className="absolute top-3 right-3 cursor-pointer size-6" onClick={() => setIsuserloggedIn(false)} />
+      <ul className="flex flex-col items-center gap-4 text-coral-red text-2xl">
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/women">Women</a></li>
+        <li><a href="/men">Men</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </main>
+)}
       </header>
   );
 };
